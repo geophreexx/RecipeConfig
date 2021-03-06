@@ -61,7 +61,7 @@ namespace RecipeConfig
             + "\n" + COMMENT_PREFIX + " " + "C and/or D can be 0."
             + "\n" + COMMENT_PREFIX
             + "\n" + COMMENT_PREFIX + " " + "The D value compounds for each upgrade. Meaning the first upgrade (lvl 2) requires D resources, the second upgrade (lvl 3) requires D*2 resources, etc."
-            + "\n" + COMMENT_PREFIX + " " + "The fomula is as follows:"
+            + "\n" + COMMENT_PREFIX + " " + "The formula is as follows:"
             + "\n" + COMMENT_PREFIX
             + "\n" + COMMENT_PREFIX + " " + "Resources required for upgrade = (LVL - 1) * D"
             + "\n" + COMMENT_PREFIX
