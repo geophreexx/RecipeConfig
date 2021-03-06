@@ -124,7 +124,7 @@ namespace RecipeConfig
             /// <param name="other">The prefab being copied.</param>
             public static void Prefix(ref ObjectDB other)
             {
-                HarmonyFileLog.Enabled = true;
+                //HarmonyFileLog.Enabled = true;
 
                 if(other == null)
                 {
@@ -138,7 +138,7 @@ namespace RecipeConfig
                     return;
                 }
 
-                //DebugRecipeList(other.m_recipes);
+                DebugRecipeList(other.m_recipes);
                 GenerateConfigFile(other.m_recipes);
                 Dictionary<string, ModRecipeData> recipeDict = ReadConfigFile();
 
