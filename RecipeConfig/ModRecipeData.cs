@@ -13,6 +13,11 @@ namespace RecipeConfig
         public string Name;
 
         /// <summary>
+        /// The type of crafting station used for the recipe.
+        /// </summary>
+        public string Station;
+
+        /// <summary>
         /// The modified amount that should be given when crafted.
         /// </summary>
         public int ModifiedCount;
