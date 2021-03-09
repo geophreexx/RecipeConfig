@@ -57,9 +57,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainClass.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ModRecipeData.cs" />
+    <Compile Include="Mod_RecipeData.cs" />
+    <Compile Include="RecipeMod.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
