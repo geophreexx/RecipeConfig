@@ -8,7 +8,7 @@
         /// <summary>
         /// The version number of the mod.
         /// </summary>
-        public const string VERSION = "1.0.1";
+        public const string VERSION = "1.0.3";
 
         /// <summary>
         /// The header that appears at the top of the Crafting Recipes config file.

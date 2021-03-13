@@ -2,6 +2,8 @@
 using HarmonyLib.Tools;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace RecipeConfig
 {
@@ -114,7 +116,11 @@ namespace RecipeConfig
         private static void GenerateConfigFile(List<Recipe> recipeList)
         {
             //Only generate the file if it doesn't exist.
-            if (File.Exists(Constants.CRAFTING_CFG_FILENAME))
+            if(recipeList.Count <= 0)
+            {
+                return;
+            }
+            else if (File.Exists(Constants.CRAFTING_CFG_FILENAME))
             {
                 //If it does exist, check to see if it's an old version. If so, archive it and generate a new file.
                 string[] lines = File.ReadAllLines(Constants.CRAFTING_CFG_FILENAME);
@@ -164,7 +170,9 @@ namespace RecipeConfig
         {
             //If the file doesn't exist, well fuck.
             if (!File.Exists(Constants.CRAFTING_CFG_FILENAME))
+            {
                 return null;
+            }
 
             string[] lines = File.ReadAllLines(Constants.CRAFTING_CFG_FILENAME);
 
